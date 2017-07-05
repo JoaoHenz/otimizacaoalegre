@@ -1,0 +1,10 @@
+
+Caso o terminal esteja no diretório no qual está contido a "src":
+
+python3 ./src/main.py (caminho para a instancia) (upperbound) (seed) (alpha)
+
+
+- O alpha para o método grasp é opcional
+
+- A seed para as funções random é opcional
+ 

@@ -9,17 +9,17 @@ class Misc:
 		for i in range(len(clientes)):
 			solucao_inicial[i] = random.randint(0,1)
 		cont=0
-		
+		'''
 		print("Solução inicial gerada pela seed, sem qualquer tratamento:")
-		print(solucao_inicial)
+		print(solucao_inicial)'''
 		
 		while Misc.NaoRespeitaRestricoes(solucao_inicial,capacidade_segundo,segfim,clientes) and cont<len(solucao_inicial):
 			solucao_inicial = Misc.ArrumaSolucao(solucao_inicial,cont)
 			cont = cont+1
 
-
+		'''
 		print("Solução inicial depois de ser tratada para obedecer as restrições do Temporal Knapsack:")
-		print(solucao_inicial)
+		print(solucao_inicial)'''
 
 		return solucao_inicial
 

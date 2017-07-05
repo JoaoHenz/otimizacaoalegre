@@ -28,17 +28,19 @@ def main(archivename, upperbound, seed, alpha):
 	capacidade_segundo = info[2]
 	seginicio = Misc.BuscaInicio(clientes)
 	segfim = Misc.BuscaFim(clientes)
-	print("Arquivo foi lido com sucesso!")
-	input("Pressione Enter para continuar...")
+
+
+	#print("Arquivo foi lido com sucesso!")
+	#input("Pressione Enter para continuar...")
 
 	solucao_inicial = Misc.GeraSolucaoInicial(seed,seginicio,segfim,capacidade_segundo,clientes)
-	print("Solução inicial criada com sucesso!")
-	input("Pressione Enter para continuar...")
+	#print("Solução inicial criada com sucesso!")
+	#input("Pressione Enter para continuar...")
 
 
-	solucao_final = Grasp.main(alpha, int(upperbound),seginicio,segfim,solucao_inicial, clientes)
-	print("O Grasp foi executado com sucesso!")
-	input("Pressione Enter para continuar...")
+	solucao_final = Grasp.main(alpha, int(upperbound),capacidade_segundo,segfim,solucao_inicial, clientes)
+	#print("O Grasp foi executado com sucesso!")
+	#input("Pressione Enter para continuar...")
 
 
 
